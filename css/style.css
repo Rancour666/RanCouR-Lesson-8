@@ -506,7 +506,7 @@ a{
 	font-size: 26px;
 	text-shadow: 2px 2px 2px #000;
 	line-height: 36px;
-	transition: all 0.5s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 .psevdo-element-list-item a:hover{
 	text-decoration: underline;
@@ -527,7 +527,7 @@ a{
 	margin: 0px 6px 0px 0px;
 	position: relative;
 	top:6px;
-	transition: all 0.5s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 .psevdo-element-list-item:nth-child(even):before{
 	content:"";
@@ -540,7 +540,7 @@ a{
 	margin: 0px 6px 0px 0px;
 	position: relative;
 	top:6px;
-	transition: all 0.5s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 
 
