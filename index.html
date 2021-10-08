@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya:900" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 8</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__top">
+						<div class="header__logo"><a target="_blank" href="https://www.youtube.com/watch?v=cbbER36qRIE&t=893s"><img src="img/psevdo.png" alt="logo"></a></div>
+						<h1 class="header__title">CSS псевдоклассы  и псевдоэлементы</h1>						
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li><a href="#a1" class="header__link">Псевдоклассы состояния</a></li>
+							<li><a href="#a2" class="header__link">Псевдлоклассы положения</a></li>
+							<li><a href="#a3" class="header__link">Псевдоэлементы</a></li>
+							<li><a href="#a7" class="header__link">Дополнительная задача</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<div class="content">
+						<div id="a1" class="content__psevdo">
+							<h2><a href="#">Псевдоклассы состояния</a></h2>
+							<div class="psevdo-block">
+								<h3><span>:hover</span></h3>
+								<p>CSS псевдокласс <span>:hover</span> срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его. </p>
+								<nav class="hover-menu">
+									<ul class="hover__list">
+										<li><a href="#" class="hover-test-link hover-test-link-one">При наведении меняю свой цвет</a></li>
+										<li><a href="#" class="hover-test-link hover-test-link-two">При наведении подчекиваюсь</a></li>
+										<li><a href="#" class="hover-test-link hover-test-link-three">При наведении меняю свой фон и цвет</a></li>
+										<li><a href="#" class="hover-test-link hover-test-link-four">При наведении я пропадаю</a></li>
+										<li>
+											<a href="#" class="hover-test-link hover-test-link-five">При наведении он появляется <span>При наведении я появляюсь</span></a>
+										</li>
+										<li>
+											<a href="#" class="hover-test-link hover-test-link-six">При наведении он появляется <span>При наведении я появляюсь</span></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:active</span></h3>
+								<p>Псевдокласс <span>:active</span> соответствует элементу в момент, когда он активируется пользователем. Он позволяет странице среагировать, когда элемент активируется. Взаимодействие элемента с мышью - это, как правило, время между нажатием и отпусканием пользователем кнопки мыши.</p>
+								<a target="_blank" href="https://www.youtube.com/channel/UCj21lfVexxsYTJFnXQLjAHA" class="active-button"> СЛУШАЙ!</a>
+								<p>Нажми на меня и подпишись!</p>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:visited</span></h3>
+								<p>CSS псевдокласс <span>:visited</span> позволяет вам выбирать ссылки, которые были посещены.</p>
+								<a target="_blank" href="https://www.youtube.com/watch?v=FwgVnKzUwmw&t=203s" class="visited-button"> СЛУШАЙ!</a>
+								<p>Нажми на меня и подпишись!</p>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:focus</span></h3>
+								<p>CSS псевдокласс <span>:focus</span> применяется, когда элемент (такой как input формы) получает фокус. Обычно он активируется при клике мышью пользователем или при выборе элемента с использованием клавиши "tab" на клавиатуре.</p>
+								<a target="_blank" href="https://www.youtube.com/watch?v=FwgVnKzUwmw&t=203s" class="focus-button"> СЛУШАЙ!</a>
+								<p>Нажми на меня и подпишись!</p>
+							</div>
+						</div>
+						<div id="a2" class="content__psevdo">
+							<h2><a href="#">Псевдоклассы положения в коде</a></h2>
+							<div class="psevdo-block">
+								<h3><span>:first-child</span></h3>
+								<h4>CSS псевдокласс :first-child находит любой элемент, являющийся первым в своём родителе.</h4>
+								<div class="psevdo-block-two">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:first-of-type</span></h3>
+								<h4>CSS псевдокласс :first-of-type находит первого потомка своего типа среди детей родителя.</h4>
+								<div class="psevdo-block-three">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:last-child</span></h3>
+								<h4>CSS псевдокласс :last-child находит любой элемент, являющийся последним в его родителе.</h4>
+								<div class="psevdo-block-four">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:last-of-type</span></h3>
+								<h4>CSS псевдокласс :last-of-type находит последнего потомка с заданным тегом в списке детей родительского элемента.</h4>
+								<div class="psevdo-block-five">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:nth-child</span></h3>
+								<h4>CSS псевдокласс  :nth-child() находит один или более элементов, основываясь на их позиции среди группы соседних элементов.</h4>
+								<div class="psevdo-block-six">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:nth-child(odd)</span></h3>
+								<h4>CSS псевдокласс  :nth-child(odd) находит нечётные строки HTML таблицы: 1, 3, 5, и т. д.</h4>
+								<div class="psevdo-block-seven">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:nth-child(even)</span></h3>
+								<h4>CSS псевдокласс  :nth-child(even) находит чётные строки HTML таблицы: 2, 4, 6, и т. д.</h4>
+								<div class="psevdo-block-eight">
+									<a href="#" class="child-link"> Я вообще то ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+									<a href="#" class="child-link"> Я вообще то тоже ссылка</a>
+									<p>А я просто самый обычный параграф</p>
+									<p>А я просто самый обычный параграф</p>
+								</div>
+							</div>
+						</div>
+						<div id="a3" class="content__psevdo">
+							<h2><a href="#">Псевдоэлементы</a></h2>
+							<div class="psevdo-block">
+								<h3><span>:first-line</span></h3>
+								<p>CSS псевдоэлемент <span>::first-line</span> применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину элемента, ширину документа и размер шрифта текста.</p>
+								<p class="psevdo-element-one">CSS псевдоэлемент <span>::first-line</span> применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину элемента, ширину документа и размер шрифта текста.CSS псевдоэлемент ::first-line применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину элемента, ширину документа и размер шрифта текста.CSS псевдоэлемент ::first-line применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину элемента, ширину документа и размер шрифта текста.</p>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:first-letter</span></h3>
+								<p>CSS псевдоэлемент ::first-letter применяет стили к первой букве первой строки блочного элемента, но только если нету другого предшествующего содержимого (такого как изображения или инлайн таблицы).</p>
+								<p class="psevdo-element-two">CSS псевдоэлемент <span>::first-letter</span> применяет стили к первой букве первой строки блочного элемента, но только если нету другого предшествующего содержимого (такого как изображения или инлайн таблицы).</p>
+								<p class="psevdo-element-two">CSS псевдоэлемент <span>::first-letter</span> применяет стили к первой букве первой строки блочного элемента, но только если нету другого предшествующего содержимого (такого как изображения или инлайн таблицы).</p>
+								<p class="psevdo-element-two">CSS псевдоэлемент <span>::first-letter</span> применяет стили к первой букве первой строки блочного элемента, но только если нету другого предшествующего содержимого (такого как изображения или инлайн таблицы).</p>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:before</span></h3>
+								<p>В CSS, <span>::before</span> создаёт псевдоэлемент,который является первым потомком выбранного элемента. Часто используется для добавления косметического содержимого в элемент с помощью свойства content. По умолчания является инлайновым.</p>
+								<h4> Доп.задание №2- Стилизуем список псевдоэлементами</h4>
+								<nav class="psevdo-element-three">
+									<ul class="psevdo-element-list">
+										<li class="psevdo-element-list-item"><a href="#">Псевдоэлемент <span>:before</span></a></li>
+										<li class="psevdo-element-list-item"><a href="#">Псевдоэлемент <span>:before</span></a></li>
+										<li class="psevdo-element-list-item"><a href="#">Псевдоэлемент <span>:before</span></a></li>
+										<li class="psevdo-element-list-item"><a href="#">Псевдоэлемент <span>:before</span></a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="psevdo-block">
+								<h3><span>:after</span></h3>
+								<p>В CSS, <span>::after</span> создаёт псевдоэлемент, который является последним потомком выбранного элемента. Часто используется для добавления косметического содержимого в элемент с помощью свойства content. По умолчанию является инлайновым.</p>
+								<h4> Доп.задание №2 - Стилизуем список псевдоэлементами</h4>
+								<nav class="psevdo-element-four">
+									<ul class="psevdo-element-after-list">
+										<li class="psevdo-element-after-list-item"><a href="#">Псевдоэлемент <span>:after</span></a></li>
+										<li class="psevdo-element-after-list-item"><a href="#">Псевдоэлемент <span>:after</span></a></li>
+										<li class="psevdo-element-after-list-item"><a href="#">Псевдоэлемент <span>:after</span></a></li>
+										<li class="psevdo-element-after-list-item"><a href="#">Псевдоэлемент <span>:after</span></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div id="a7" class="content__psevdo">
+							<h2><a href="#">Дополнительная Задача</a></h2>
+							<div class="psevdo-block">
+							<h3><span>3.Doggie</span></h3>
+								<div class="dog-container">
+									<div class="doggie">
+										<div class="doggie__titles">
+											<div class="doggie__title">OUR PROMISE TO YOU</div>
+											<div class="doggie__subtitle">Sed perspiciatis omnis iste natus</div>
+										</div>
+										<div class="doggie__row">
+											<div class="doggie-card">
+												<div class="doggie-card__image doggie-card__image-one"></div>
+												<div class="doggie-card__content">
+													<div class="doggie-card__title">24/7 Love & Care</div>
+													<div class="doggie-card__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+												</div>
+											</div>
+											<div class="doggie-card">
+												<div class="doggie-card__image doggie-card__image-two"></div>
+												<div class="doggie-card__content">
+													<div class="doggie-card__title">On-site Veterinarian</div>
+													<div class="doggie-card__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+												</div>
+											</div>
+											<div class="doggie-card">
+												<div class="doggie-card__image doggie-card__image-three"></div>
+												<div class="doggie-card__content">
+													<div class="doggie-card__title">Live-stream Cameras</div>
+													<div class="doggie-card__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<h3>4. HEALTHY FOOD</h3>
+								<div class="dog-container">
+									<div class="healthy-food">
+										<div class="healty-food__card">
+											<div class="healthy-food__title">Choose how often</div>
+											<div class="healthy-food__text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main> 
+			<footer class="footer">
+				<div class="container">
+					<nav class="footer__menu">
+						<ul class="header__list">
+							<li><a href="#a1" class="header__link">Псевдоклассы состояния</a></li>
+							<li><a href="#a2" class="header__link">Псевдлоклассы положения</a></li>
+							<li><a href="#a3" class="header__link">Псевдоэлементы</a></li>
+							<li><a href="#a7" class="header__link">Дополнительная задача</a></li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
