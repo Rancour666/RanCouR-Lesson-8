@@ -14,14 +14,7 @@
 	font-display: swap;
 }
 
-@font-face {
-	font-family: "Orator Std";
-	src: url("../fonts/OratorStd.woff2") format("woff2"), url("../fonts/OratorStd.woff") format("woff"),
-		url("../fonts/OratorStd.ttf") format("truetype");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
+
 @font-face {
 	font-family: 'HelveticaNeue';
 	src: url("../fonts/HelveticaNeue.eot");
@@ -187,7 +180,7 @@ a{
 
 .header__top{
 	padding: 20px;
-	border-radius: 33% 33% 33% 33% / 3% 3% 3% 3% ;
+	border-radius: 20px;
 	background: url('../img/brick.jpg');
 	box-shadow: inset 5px 5px 5px 5px #3a3632;
 }
@@ -275,12 +268,10 @@ a{
 }
 .hover-test-link-five span{
 	opacity: 0;
-	visibility: 0;
 	transition: opacity 0.9s ease 0s;
 }
 .hover-test-link-five:hover span{
 	opacity: 1;
-	visibility: 1;
 	color: coral;
 }
 .hover-test-link-five:hover{
@@ -296,13 +287,11 @@ a{
 .hover-test-link-six span{
 	display: none;
 	opacity: 0;
-	visibility: 0;
 }
 .hover-test-link-six:hover span{
 	display: inline-block;
 	color: coral;
 	opacity: 1;
-	visibility: 1;
 }
 .hover-test-link-six:hover{
 	background: rgb(0, 0, 0);
